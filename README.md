@@ -3,7 +3,7 @@ Aplikacja mobilna służąca do sprawdzania pogody w czasie rzeczywistym, wykorz
 ## Opis Aplikacji:
 Aplikacja pozwala użytkownikowi na szybkie sprawdzenie warunków atmosferycznych (temperatura, opis pogody, wilgotność, ciśnienie) dla bieżącej lokalizacji lub dowolnego miasta na świecie. Użytkownik może dodawać wybrane miasta do listy "Ulubionych", która jest przechowywana w pamięci urządzenia, co pozwala na szybki dostęp do danych bez konieczności ponownego wyszukiwania.
 
-## 🛠️ Zastosowane Technologie
+## Zastosowane Technologie
 
 Projekt został zrealizowany w języku **Kotlin**:
 
@@ -47,6 +47,6 @@ Zgodnie z wymaganiami projektowymi, aplikacja wykorzystuje następujące źród�
 
 
 ---
-**Autor:** Maciej Michalak
-**Nr albumu:** 122381
-**Przedmiot:** Programowanie aplikacji mobilnych
+Maciej Michalak
+122381
+Programowanie aplikacji mobilnych
