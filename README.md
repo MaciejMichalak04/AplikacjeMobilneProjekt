@@ -42,7 +42,7 @@ Zgodnie z wymaganiami projektowymi, aplikacja wykorzystuje następujące źród�
 
 | Ekran Główny | Wyszukiwanie i Ulubione | 
 |:---:|:---:|:---:|
-| ![Main Screen](screenshots/screen1.png) | ![Search](screenshots/screen2.png) |
+| ![Main Screen](screenshots/Screen1.png) | ![Search](screenshots/Screen2.png) |
 
 
 
