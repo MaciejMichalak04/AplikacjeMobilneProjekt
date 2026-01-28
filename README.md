@@ -40,8 +40,6 @@ Zgodnie z wymaganiami projektowymi, aplikacja wykorzystuje następujące źród�
 
 ## Zrzuty Ekranu
 
-| Ekran Główny | Wyszukiwanie i Ulubione | 
-|:---:|:---:|:---:|
 | ![Main Screen](screenshots/Screen1.png) | ![Search](screenshots/Screen2.png) |
 
 
