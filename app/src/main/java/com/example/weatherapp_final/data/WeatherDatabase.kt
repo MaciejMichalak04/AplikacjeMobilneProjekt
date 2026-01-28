@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface WeatherDao {
     @Query("SELECT * FROM fav_city_table")
-    fun getFavorites(): Flow<List<FavoriteCity>> // Flow sam odświeża listę jak coś dodasz!
+    fun getFavorites(): Flow<List<FavoriteCity>> // Flow sam odświeża listę
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(city: FavoriteCity)

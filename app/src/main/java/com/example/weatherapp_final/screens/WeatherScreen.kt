@@ -63,7 +63,6 @@ fun WeatherScreen(navController: NavController, viewModel: WeatherViewModel) {
         topBar = {
             TopAppBar(
                 title = { Text("Weather App") }
-                // Usunęliśmy przycisk nawigacji do osobnego ekranu
             )
         }
     ) { padding ->
@@ -74,7 +73,7 @@ fun WeatherScreen(navController: NavController, viewModel: WeatherViewModel) {
                 .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // --- 1. WYSZUKIWARKA ---
+            //1. Wyszukiwarka
             Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 OutlinedTextField(
                     value = cityQuery,
@@ -95,7 +94,7 @@ fun WeatherScreen(navController: NavController, viewModel: WeatherViewModel) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // --- 2. LISTA ULUBIONYCH (NOWOŚĆ) ---
+            // 2. Ulubione miasta
             if (favList.isNotEmpty()) {
                 Text(
                     text = "Twoje ulubione:",
@@ -118,7 +117,6 @@ fun WeatherScreen(navController: NavController, viewModel: WeatherViewModel) {
                             icon = {
                                 Icon(Icons.Default.Favorite, contentDescription = null, tint = Color.Red, modifier = Modifier.size(16.dp))
                             },
-                            // Ikona usuwania (X) po prawej stronie
                             colors = SuggestionChipDefaults.suggestionChipColors(
                                 containerColor = MaterialTheme.colorScheme.secondaryContainer
                             )
@@ -129,7 +127,7 @@ fun WeatherScreen(navController: NavController, viewModel: WeatherViewModel) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // --- 3. WYNIKI POGODY ---
+            // 3. Wyniki pogody
             if (viewModel.isLoading) {
                 CircularProgressIndicator()
             } else if (viewModel.error != null) {
@@ -144,7 +142,7 @@ fun WeatherScreen(navController: NavController, viewModel: WeatherViewModel) {
                     val isFavorite = favList.any { it.name == weather.name }
                     IconButton(onClick = {
                         if (isFavorite) {
-                            // Opcjonalnie: usuwanie po kliknięciu serca (jeśli chcesz)
+                            // Opcjonalnie: usuwanie po kliknięciu serca
                             val cityToRemove = favList.first { it.name == weather.name }
                             viewModel.removeFavorite(cityToRemove)
                             Toast.makeText(context, "Usunięto z ulubionych", Toast.LENGTH_SHORT).show()
