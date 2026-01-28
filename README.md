@@ -47,6 +47,6 @@ Zgodnie z wymaganiami projektowymi, aplikacja wykorzystuje następujące źród�
 
 
 ---
-**Autor:** Maciej Michalak
-**Nr albumu:** 122381
-**Przedmiot:** Programowanie aplikacji mobilnych
+Maciej Michalak
+122381
+Programowanie aplikacji mobilnych
